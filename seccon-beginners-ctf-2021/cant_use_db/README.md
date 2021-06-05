@@ -1,9 +1,13 @@
 # cant_use_db
 
+> Can't use DB.  
+> I have so little money that I can't even buy the ingredients for ramen.  
+> 🍜
+
 ## Write-up
 
-balance, noodles, soup がそれぞれ別のファイルで管理されている。  
-balanceの書き込み前に ~~謎の~~ sleep がある。  
+`app.py`を読むと balance, noodles, soupがそれぞれ別のファイルで管理されていることがわかります。
+`buy_noodles`や`buy_soup`の処理では、balanceの書き込み前に ~~謎の~~ `time.sleep`があります。
 
 ```
     if balance >= 10000:
@@ -14,8 +18,8 @@ balanceの書き込み前に ~~謎の~~ sleep がある。
         open(f"./users/{user_id}/balance.txt", "w").write(str(balance))
 ```
 
-balance の書き込みが終わる前に noodles と soup を買う。  
-具体的には素早くクリックする。  
+balanceの書き込みが終わる前にnoodlesとsoupを購入することで、noodleを2以上、soupを1以上購入することができます。
+`time.sleep`の時間が長いので素早くクリックすることで購入することができます。
 
 ## Flag
 

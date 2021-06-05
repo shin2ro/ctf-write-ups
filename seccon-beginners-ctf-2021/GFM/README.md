@@ -1,9 +1,13 @@
 # GFM
 
+> - Github Flavored Markdown
+> - Google Facebook Microsoft
+> - And...?
+
 ## Write-up
 
-与えられたpを使って `MatrixSpace` を生成。  
-keyの逆行列とencを使ってMを求める。  
+与えられたpを使って`MatrixSpace`を生成します。
+keyの逆行列とencを使ってMを求めることができます。
 
 ```
 M = key_ms.inverse() * enc_ms * key_ms.inverse()

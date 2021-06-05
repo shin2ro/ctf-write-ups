@@ -1,9 +1,11 @@
 # depixelization
 
+> Can you depixelize it ?
+
 ## Write-up
 
-フラグの各文字にPIXを上書きしてリサイズして読めなくするプログラム。  
-半角英数字と一部の記号に同じ処理を実施した画像を用意してoutput.pngの各文字と比較する。  
+`pixelization.py`を読むと1文字ずつPIXを重ねてピクセル化していることがわかります。
+半角英数字と記号に対して同じ加工をした画像を用意して`output.png`の各文字と比較することでフラグを見つけます。
 
 ## Flag
 

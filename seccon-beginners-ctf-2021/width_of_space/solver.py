@@ -1,5 +1,5 @@
 def solve():
-    with open('./space.txt', encoding='utf-8') as f:
+    with open('problem.txt', encoding='utf-8') as f:
         s = f.readline()[:-1]
 
     flag = ''

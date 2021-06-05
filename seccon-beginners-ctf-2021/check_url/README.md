@@ -1,9 +1,12 @@
 # check_url
 
+> Have you ever used curl ?
+
 ## Write-up
 
-指定したURLへアクセスしてインラインフレームで表示するサイト。  
-URLのチェックが厳しい。  
+`index.php`を読むと指定したURLへcurlでアクセスしてiframeに表示しています。
+クライアントのIPアドレスが`127.0.0.1`の場合にフラグが表示されます。
+URLはチェックされているので`https://127.0.0.1`や`https://localhost`は使えそうにありません。
 
 ```php
               $url = $_GET["url"];
@@ -15,11 +18,14 @@ URLのチェックが厳しい。
               }
 ```
 
-英数字のみでlocalhostを表現すれば突破できそうなので調べてみると  
-[127.0.0.1(localhost)を一番面白く表記できた奴が優勝](https://qiita.com/naka_kyon/items/88478be20b300e757fc0)  
-というちょうどよい記事があった。  
+`localhost`を違う方法で表現できないか調べてみると
+[127.0.0.1(localhost)を一番面白く表記できた奴が優勝](https://qiita.com/naka_kyon/items/88478be20b300e757fc0)
+という記事が見つかりました。
+`.`は`👻`に置き換えられるので`.`のない表現を全部試します。
 
-<https://check-url.quals.beginners.seccon.jp/?url=https://0x7F000001>
+- <https://check-url.quals.beginners.seccon.jp/?url=https://2130706433>
+- <https://check-url.quals.beginners.seccon.jp/?url=https://0x7F000001>
+- <https://check-url.quals.beginners.seccon.jp/?url=https://017700000001>
 
 ## Flag
 

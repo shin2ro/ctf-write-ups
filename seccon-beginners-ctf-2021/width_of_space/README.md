@@ -1,17 +1,17 @@
 # width_of_space
 
-イースターエッグ
+> Our spacemilky_way may be in a computer.  
+> Computer use binary (0,1).
 
 ## Write-up
 
-なんとなくスコアサーバーでブラウザの開発者ツールを開くと
+ブラウザの開発者ツールを開くとコンソールに以下のように表示されています。
 
+> Do you want a extra challenge?  
 > Try exec "i_need_extra_challenge()" via your browser's devtools.
 
-とコンソールに出力されていたので `i_need_extra_challenge()` を実行する。  
-
-🌌🪐と2種類の0幅スペースが使われた文字列が与えられる。  
-0幅スペースを0と1に置き換えて文字に変換するとフラグになる。  
+`i_need_extra_challenge()`を実行すると🌌🪐と2種類の0幅スペースで構成された文字列が与えられます。
+0幅スペースを0と1に置き換えて文字に変換するとフラグになります。
 
 ## Flag
 
