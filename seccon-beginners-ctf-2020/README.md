@@ -1,3 +1,4 @@
 # SECCON Beginners CTF 2020
 
-<https://score.beginners.seccon.jp/>
+<https://github.com/SECCON/Beginners_CTF_2020>
+
