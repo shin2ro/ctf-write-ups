@@ -1,3 +1,4 @@
 # InterKosenCTF 2020
 
-<https://score.kosenctf.com/index.html#/>
+<https://github.com/theoremoon/InterKosenCTF2020-challenges>
+
